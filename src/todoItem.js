@@ -6,8 +6,8 @@ const TodoItem = (props) => {
     return (
         <li onClick={props.onClick}>
             <div>
-            {otherProp}
-                </div>
+                {otherProp}
+            </div>
              <div>
                 {name}
             </div>

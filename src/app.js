@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TodoItem from './todoItem';
+import Parent from './components/parent';
 
 class App extends Component {
     state = {
@@ -15,6 +16,11 @@ class App extends Component {
                 <button onClick={() => this.handleClick( this.state.inputText)}>add todo</button>
                 <div>
                     {this.listTodos(this.state.todos)}
+                </div>
+                <div>
+                    <Parent>
+                    {this.listTodos(this.state.todos)}
+                    </Parent>
                 </div>
             </div>
         );
